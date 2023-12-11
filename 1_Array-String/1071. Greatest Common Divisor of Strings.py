@@ -15,10 +15,9 @@ class Solution:
 
         return str1[:gcd_length]
 
-# Example usage:
-sol = Solution()
-str1 = "ABCABC"
-str2 = "ABC"
-result = sol.gcdOfStrings(str1, str2)
-print(result)  # Output: "ABC"
-
+if __name__ == "__main__":
+    sol = Solution()
+    str1 = "ABCABC"
+    str2 = "ABC"
+    result = sol.gcdOfStrings(str1, str2)
+    print(result)

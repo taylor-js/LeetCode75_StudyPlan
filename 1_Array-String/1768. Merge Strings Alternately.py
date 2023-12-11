@@ -17,7 +17,9 @@ class Solution:
 
         return ''.join(result)
 
-sol = Solution()
-word1 = "ab"
-word2 = "pqrs"
-print(sol.mergeAlternately(word1, word2))
+if __name__ == "__main__":
+    sol = Solution()
+    word1 = "ab"
+    word2 = "pqrs"
+    result = sol.mergeAlternately(word1, word2)
+    print(result)

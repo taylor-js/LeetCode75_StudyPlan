@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/string-compression/description/?envType=study-plan-v2&envId=leetcode-75
+
 from typing import List
 
 class Solution:
@@ -30,11 +32,7 @@ class Solution:
         return write_index
 
 if __name__ == "__main__":
-
-    s = Solution()
-
+    sol = Solution()
     input_str_test_1 = ["a", "a", "b", "b", "c", "c", "c"]
-
-    test_1 = s.compress(input_str_test_1)
-
+    test_1 = sol.compress(input_str_test_1)
     print(test_1)

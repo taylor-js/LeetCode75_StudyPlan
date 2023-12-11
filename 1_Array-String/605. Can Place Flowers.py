@@ -14,9 +14,9 @@ class Solution:
                 
         return n <= 0
 
-# Example usage:
-s = Solution()
-flowerbed = [1, 0, 0, 0, 1]
-n = 1
-result = s.canPlaceFlowers(flowerbed, n)
-print(result)  # Output: True
+if __name__ == "__main__":
+    sol = Solution()
+    flowerbed = [1, 0, 0, 0, 1]
+    n = 1
+    result = sol.canPlaceFlowers(flowerbed, n)
+    print(result)

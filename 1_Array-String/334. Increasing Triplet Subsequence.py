@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/increasing-triplet-subsequence/description/?envType=study-plan-v2&envId=leetcode-75
+
 from typing import List
 
 class Solution:
@@ -16,3 +18,9 @@ class Solution:
             else:
                 return True
         return False
+
+if __name__ == "__main__":
+    sol = Solution()
+    nums = [1,2,3,4,5]
+    result = sol.increasingTriplet(nums)
+    print(result)

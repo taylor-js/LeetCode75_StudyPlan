@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/product-of-array-except-self/description/?envType=study-plan-v2&envId=leetcode-75
+
 from typing import List
 
 class Solution:
@@ -18,8 +20,8 @@ class Solution:
 
         return result
 
-# Example usage:
-s = Solution()
-nums = [1, 2, 3, 4]
-result = s.productExceptSelf(nums)
-print(result)  # Output: [24, 12, 8, 6]
+if __name__ == "__main__":
+    sol = Solution()
+    nums = [1, 2, 3, 4]
+    result = sol.productExceptSelf(nums)
+    print(result)

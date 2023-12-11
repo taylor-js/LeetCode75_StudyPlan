@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/container-with-most-water/description/?envType=study-plan-v2&envId=leetcode-75
+
 from typing import List
 
 class Solution:
@@ -15,3 +17,9 @@ class Solution:
                 r -= 1
 
         return result
+
+if __name__ == "__main__":
+    sol = Solution()
+    height = [1,8,6,2,5,4,8,3,7]
+    result = sol.maxArea(height)
+    print(result)

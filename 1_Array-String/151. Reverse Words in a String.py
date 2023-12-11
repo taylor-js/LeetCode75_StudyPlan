@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75
+
 class Solution:
     def reverseWords(self, s: str) -> str:
         
@@ -7,8 +9,8 @@ class Solution:
 
         return reversed_s
     
-# Example usage:
-sol = Solution()
-s = "  the sky  is blue  "
-result = sol.reverseWords(s)
-print(result)  # Output: "blue is sky the"
+if __name__ == "__main__":
+    sol = Solution()
+    s = "  the sky  is blue  "
+    result = sol.reverseWords(s)
+    print(result)

@@ -19,3 +19,9 @@ class Solution:
             right -= 1
             
         return ''.join(s)
+
+if __name__ == "__main__":
+    sol = Solution()
+    s = "hello"
+    result = sol.reverseVowels(s)
+    print(result)

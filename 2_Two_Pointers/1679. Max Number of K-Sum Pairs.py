@@ -17,3 +17,10 @@ class Solution:
                     seen.add(k - x)
 
         return output
+
+if __name__ == "__main__":
+    sol = Solution()
+    nums = [1,2,3,4]
+    k = 5
+    result = sol.maxOperations(nums, k)
+    print(result)
