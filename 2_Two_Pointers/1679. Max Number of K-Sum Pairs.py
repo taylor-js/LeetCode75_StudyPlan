@@ -5,18 +5,20 @@ from collections import Counter
 
 class Solution:
     def maxOperations(self, nums: List[int], k: int) -> int:
-        num_counts = Counter(nums)
-        operations = 0
+        c = Counter(nums)
+        output = 0
+        seen = set()
 
-        for num in num_counts:
-            complement = k - num
+        for x in c:
+            if x not in seen and (k - x) in c:
+                if x == (k - x):
+                    output += c[x] // 2
+                else:
+                    output += min(c[x], c[k - x])
+                seen.add(x)
+                seen.add(k - x)
 
-            if complement in num_counts and num_counts[complement] > 0:
-                num_counts[num] -= 1
-                num_counts[complement] -= 1
-                operations += 1
-
-        return operations
+        return output
 
 if __name__ == "__main__":
     sol = Solution()
