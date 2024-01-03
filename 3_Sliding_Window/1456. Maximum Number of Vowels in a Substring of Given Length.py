@@ -4,13 +4,14 @@ class Solution:
     def maxVowels(self, s: str, k: int) -> int:
         vowels = {'a', 'e', 'i', 'o', 'u'}
 
-        left, count, result = 0, 0, 0
-        for right in range(len(s)):
+        left, right, count, result = 0, 0, 0, 0
+        while right < len(s):
             count += 1 if s[right] in vowels else 0
             if right - left + 1 > k:
-                count -=1 if s[left] in vowels else 0
+                count -= 1 if s[left] in vowels else 0
                 left += 1
             result = max(result, count)
+            right += 1
         return result
     
 if __name__ == "__main__":
