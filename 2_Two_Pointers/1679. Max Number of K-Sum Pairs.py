@@ -1,25 +1,19 @@
 # https://leetcode.com/problems/max-number-of-k-sum-pairs/description/?envType=study-plan-v2&envId=leetcode-75
 
 from typing import List
+from collections import Counter
 
 class Solution:
     def maxOperations(self, nums: List[int], k: int) -> int:
-        nums.sort()
-        left, right = 0, len(nums) - 1
-        operations_count = 0
-        
-        while left < right:
-            current_sum = nums[left] + nums[right]
-            if current_sum == k:
-                operations_count += 1
-                left += 1
-                right -= 1
-            elif current_sum < k:
-                left += 1
-            else:
-                right -= 1
-
-        return operations_count
+        frequency = Counter(nums)
+        pairs = 0
+        for key in frequency.keys():
+            a, b = key, k - key
+            if a < b:
+                pairs += min(frequency[a], frequency[b])
+            elif a == b:
+                pairs += frequency[a] // 2
+        return pairs
 
 if __name__ == "__main__":
     sol = Solution()
