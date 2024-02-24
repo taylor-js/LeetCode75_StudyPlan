@@ -9,18 +9,21 @@ class Solution:
         return len(set(c.values())) == len(c)
     
 if __name__ == "__main__":
-    # Input: arr = [1,2,2,1,1,3]
     sol = Solution()
-    output_1 = sol.uniqueOccurrences([1,2,2,1,1,3])
+    # Example 1
+    arr1 = [1,2,2,1,1,3]
+    output_1 = sol.uniqueOccurrences(arr1)
     print(output_1)
     # Output: True
 
-    # Input: arr = [1,2]
-    output_2 = sol.uniqueOccurrences([1,2])
+    # Example 2
+    arr2 = [1,2]
+    output_2 = sol.uniqueOccurrences(arr2)
     print(output_2)
     # Output: False
 
-    # Input: arr = [-3,0,1,-3,1,1,1,-3,10,0]
-    output_3 = sol.uniqueOccurrences([-3,0,1,-3,1,1,1,-3,10,0])
+    # Example 3
+    arr3 = [-3,0,1,-3,1,1,1,-3,10,0]
+    output_3 = sol.uniqueOccurrences()
     print(output_3)
     # Output: True

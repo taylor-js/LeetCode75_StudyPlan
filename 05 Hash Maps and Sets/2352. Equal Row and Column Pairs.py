@@ -17,8 +17,10 @@ class Solution:
 if __name__ == "__main__":
     sol = Solution()
     # Example 1
-    e1 = sol.equalPairs([[3, 2, 1], [1, 7, 6], [2, 7, 7]])
+    grid1 = [[3, 2, 1], [1, 7, 6], [2, 7, 7]]
+    e1 = sol.equalPairs(grid1)
     print(e1)
     # Example 2
-    e2 = sol.equalPairs([[3, 1, 2, 2], [1, 4, 4, 5], [2, 4, 2, 2], [2, 4, 2, 2]])
+    grid2 = [[3, 1, 2, 2], [1, 4, 4, 5], [2, 4, 2, 2], [2, 4, 2, 2]]
+    e2 = sol.equalPairs(grid2)
     print(e2)
