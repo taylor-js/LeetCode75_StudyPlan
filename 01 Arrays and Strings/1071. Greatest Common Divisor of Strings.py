@@ -17,7 +17,18 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
+    # Example 1
     str1 = "ABCABC"
     str2 = "ABC"
-    result = sol.gcdOfStrings(str1, str2)
-    print(result)
+    gcdos1 = sol.gcdOfStrings(str1, str2)
+    print(gcdos1)
+    # Example 2
+    str3 = "ABABAB"
+    str4 = "ABAB"
+    gcdos2 = sol.gcdOfStrings(str3, str4)
+    print(gcdos2)
+    # Example 3
+    str5 = "LEET"
+    str6 = "CODE"
+    gcdos3 = sol.gcdOfStrings(str5, str6)
+    print(gcdos3)

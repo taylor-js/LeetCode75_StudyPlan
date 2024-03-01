@@ -13,16 +13,17 @@ class Solution:
 if __name__ == "__main__":
     sol = Solution()
     # Example 1
-    output_1 = sol.closeStrings("abc", "bca")
-    print(output_1)
-    # Output: True
-
+    word1 = "abc"
+    word2 = "bca"
+    cs1 = sol.closeStrings(word1, word2)
+    print(cs1)
     # Example 2
-    output_2 = sol.closeStrings("a", "aa")
-    print(output_2)
-    # Output: False
-
+    word3 = "a"
+    word4 = "aa"
+    cs2 = sol.closeStrings(word3, word4)
+    print(cs2)
     # Example 3
-    output_3 = sol.closeStrings("cabbba", "abbccc")
-    print(output_3)
-    # Output: True
+    word5 = "cabbba"
+    word6 = "abbccc"
+    cs3 = sol.closeStrings(word5, word6)
+    print(cs3)

@@ -34,7 +34,13 @@ class Solution:
     
 if __name__ == "__main__":
     sol = Solution()
-    nums = [1, 12, -5, -6, 50, 3]
-    k = 4
-    result = sol.findMaxAverage(nums, k)
-    print(result)
+    # Example 1
+    nums1 = [1,12,-5,-6,50,3]
+    k1 = 4
+    fma1 = sol.findMaxAverage(nums1, k1)
+    print(fma1)
+    # Example 2
+    nums2 = [5]
+    k2 = 1
+    fma2 = sol.findMaxAverage(nums2, k2)
+    print(fma2)

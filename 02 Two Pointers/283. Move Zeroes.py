@@ -17,6 +17,11 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    nums = [0, 1, 0, 3, 12]
-    result = sol.moveZeroes(nums)
-    print(result)
+    # Example 1
+    nums1 = [0,1,0,3,12]
+    mz1 = sol.moveZeroes(nums1)
+    print(mz1)
+    # Example 2
+    nums2 = [0]
+    mz2 = sol.moveZeroes(nums2)
+    print(mz2)

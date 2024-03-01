@@ -22,6 +22,11 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    nums = [1, 2, 3, 4]
-    result = sol.productExceptSelf(nums)
-    print(result)
+    # Example 1
+    nums1 = [1,2,3,4]
+    pes1 = sol.productExceptSelf(nums1)
+    print(pes1)
+    # Example 2
+    nums2 = [-1,1,0,-3,3]
+    pes2 = sol.productExceptSelf(nums2)
+    print(pes2)

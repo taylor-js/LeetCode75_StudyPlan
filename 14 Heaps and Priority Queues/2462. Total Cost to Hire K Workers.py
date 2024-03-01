@@ -36,15 +36,15 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    # Example usage:
+    # Example 1
     costs1 = [17,12,10,2,7,2,11,20,8]
     k1 = 3
     candidates1 = 4
-    output1 = sol.totalCost(costs1, k1, candidates1)
-    print(output1)  # Output: 11
-
+    tc1 = sol.totalCost(costs1, k1, candidates1)
+    print(tc1)
+    # Example 2
     costs2 = [1,2,4,1]
     k2 = 3
     candidates2 = 3
-    output2 = sol.totalCost(costs2, k2, candidates2)
-    print(output2)  # Output: 4
+    tc2 = sol.totalCost(costs2, k2, candidates2)
+    print(tc2)

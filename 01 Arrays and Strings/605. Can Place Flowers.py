@@ -16,7 +16,13 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    flowerbed = [1, 0, 0, 0, 1]
-    n = 1
-    result = sol.canPlaceFlowers(flowerbed, n)
-    print(result)
+    # Example 1
+    flowerbed1 = [1,0,0,0,1]
+    n1 = 1
+    cpf1 = sol.canPlaceFlowers(flowerbed1, n1)
+    print(cpf1)
+    # Example 2
+    flowerbed2 = [1,0,0,0,1]
+    n2 = 2
+    cpf2 = sol.canPlaceFlowers(flowerbed2, n2)
+    print(cpf2)

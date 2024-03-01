@@ -22,6 +22,11 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    s = "hello"
-    result = sol.reverseVowels(s)
-    print(result)
+    # Example 1
+    s1 = "hello"
+    rv1 = sol.reverseVowels(s1)
+    print(rv1)
+    # Example 2
+    s2 = "leetcode"
+    rv2 = sol.reverseVowels(s2)
+    print(rv2)

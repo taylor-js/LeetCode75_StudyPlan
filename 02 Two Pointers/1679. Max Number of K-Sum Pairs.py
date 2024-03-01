@@ -17,7 +17,13 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    nums = [1,2,3,4]
-    k = 5
-    result = sol.maxOperations(nums, k)
-    print(result)
+    # Example 1
+    nums1 = [1,2,3,4]
+    k1 = 5
+    mo1 = sol.maxOperations(nums1, k1)
+    print(mo1)
+    # Example 2
+    nums2 = [3,1,3,4,3]
+    k2 = 6
+    mo2 = sol.maxOperations(nums2, k2)
+    print(mo2)

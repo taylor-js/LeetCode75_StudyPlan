@@ -12,18 +12,13 @@ if __name__ == "__main__":
     sol = Solution()
     # Example 1
     arr1 = [1,2,2,1,1,3]
-    output_1 = sol.uniqueOccurrences(arr1)
-    print(output_1)
-    # Output: True
-
+    uo1 = sol.uniqueOccurrences(arr1)
+    print(uo1)
     # Example 2
     arr2 = [1,2]
-    output_2 = sol.uniqueOccurrences(arr2)
-    print(output_2)
-    # Output: False
-
+    uo2 = sol.uniqueOccurrences(arr2)
+    print(uo2)
     # Example 3
     arr3 = [-3,0,1,-3,1,1,1,-3,10,0]
-    output_3 = sol.uniqueOccurrences()
-    print(output_3)
-    # Output: True
+    uo3 = sol.uniqueOccurrences()
+    print(uo3)

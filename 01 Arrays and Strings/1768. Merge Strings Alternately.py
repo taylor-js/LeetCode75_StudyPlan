@@ -19,7 +19,13 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    word1 = "ab"
-    word2 = "pqrs"
-    result = sol.mergeAlternately(word1, word2)
-    print(result)
+    # Example 1
+    word1 = "abc"
+    word2 = "pqr"
+    ma1 = sol.mergeAlternately(word1, word2)
+    print(ma1)
+    # Example 2
+    word3 = "ab"
+    word4 = "pqrs"
+    ma2 = sol.mergeAlternately(word3, word4)
+    print(ma2)

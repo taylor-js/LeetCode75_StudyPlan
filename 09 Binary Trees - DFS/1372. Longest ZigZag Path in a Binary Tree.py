@@ -40,7 +40,6 @@ if __name__ == "__main__":
     root1.right.right.right = TreeNode(1)
     e1tn = sol.longestZigZag(root1)
     print("Solution with TreeNode()", e1tn)
-    
     # Example 2: root = [1,1,1,null,1,null,null,1,1,null,1]
     root2 = TreeNode(1)
     root2.left = TreeNode(1)
@@ -57,7 +56,6 @@ if __name__ == "__main__":
     root2.right.right.right = TreeNode(1)
     e2 = sol.longestZigZag(root2)
     print("Solution with TreeNode()", e2)
-
     # Example 3: root = [1]
     root3 = TreeNode(1)
     e3 = sol.longestZigZag(root3)

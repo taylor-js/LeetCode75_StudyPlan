@@ -43,7 +43,6 @@ if __name__ == "__main__":
     root1.left.right = TreeNode(-8)
     result1 = sol.maxLevelSum(root1)
     print("Example 1 Output:", result1)
-
     # Example 2: root = [989,null,10250,98693,-89388,null,null,null,-32127]
     root2 = TreeNode(989)
     root2.right = TreeNode(10250)

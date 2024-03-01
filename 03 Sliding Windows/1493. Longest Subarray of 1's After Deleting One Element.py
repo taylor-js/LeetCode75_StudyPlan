@@ -18,11 +18,14 @@ class Solution:
 if __name__ == "__main__":
     sol = Solution()
     # Example 1
-    output_1 = sol.longestSubarray([1,1,0,1])
-    print(output_1)
-    # Output: 3
-
+    nums1 = [1,1,0,1]
+    ls1 = sol.longestSubarray(nums1)
+    print(ls1)
     # Example 2
-    output_2 = sol.longestSubarray([0,1,1,1,0,1,1,0,1])
-    print(output_2)
-    # Output: 5
+    nums2 = [0,1,1,1,0,1,1,0,1]
+    ls2 = sol.longestSubarray(nums2)
+    print(ls2)
+    # Example 3
+    nums3 = [1,1,1]
+    ls3 = sol.longestSubarray(nums3)
+    print(ls3)

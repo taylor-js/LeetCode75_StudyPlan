@@ -39,7 +39,18 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    s = "abciiidef"
-    k = 3
-    result = sol.maxVowels(s, k)
-    print(result)
+    # Example 1
+    s1 = "abciiidef"
+    k1 = 3
+    mv1 = sol.maxVowels(s1, k1)
+    print(mv1)
+    # Example 2
+    s2 = "aeiou"
+    k2 = 2
+    mv2 = sol.maxVowels(s2, k2)
+    print(mv2)
+    # Example 3
+    s3 = "leetcode"
+    k3 = 3
+    mv3 = sol.maxVowels(s3, k3)
+    print(mv3)

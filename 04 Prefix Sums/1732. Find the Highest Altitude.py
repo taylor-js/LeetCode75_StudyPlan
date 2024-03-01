@@ -15,12 +15,9 @@ if __name__ == "__main__":
     sol = Solution()
     # Example 1
     gain1 = [-5,1,5,0,-7]
-    output_1 = sol.largestAltitude(gain1)
-    print(output_1)
-    # Output: 1
-
+    la1 = sol.largestAltitude(gain1)
+    print(la1)
     # Example 2
     gain2 = [-4,-3,-2,-1,4,3,2]
-    output_2 = sol.largestAltitude(gain2)
-    print(output_2)
-    # Output: 0
+    la2 = sol.largestAltitude(gain2)
+    print(la2)

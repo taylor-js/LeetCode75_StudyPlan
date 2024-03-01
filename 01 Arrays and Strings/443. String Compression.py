@@ -33,6 +33,15 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    input_str_test_1 = ["a", "a", "b", "b", "c", "c", "c"]
-    test_1 = sol.compress(input_str_test_1)
-    print(test_1)
+    # Example 1
+    chars1 = ["a","a","b","b","c","c","c"]
+    comp1 = sol.compress(chars1)
+    print(comp1)
+    # Example 2
+    chars2 = ["a"]
+    comp2 = sol.compress(chars2)
+    print(comp2)
+    # Example 3
+    chars3 = ["a","b","b","b","b","b","b","b","b","b","b","b","b"]
+    comp3 = sol.compress(chars3)
+    print(comp3)

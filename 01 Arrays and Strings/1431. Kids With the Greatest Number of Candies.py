@@ -18,7 +18,13 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    candies = [2,3,5,1,3]
-    extraCandies = 3
-    result = sol.kidsWithCandies(candies, extraCandies)
-    print(result)
+    # Example 1
+    candies1 = [2,3,5,1,3]
+    extraCandies1 = 3
+    kwc1 = sol.kidsWithCandies(candies1, extraCandies1)
+    print(kwc1)
+    # Example 2
+    candies2 = [4,2,1,1,2]
+    extraCandies2 = 1
+    kwc2 = sol.kidsWithCandies(candies2, extraCandies2)
+    print(kwc2)

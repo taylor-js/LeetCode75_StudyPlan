@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/min-cost-climbing-stairs/?envType=study-plan-v2&envId=leetcode-75
+
 from typing import List
 
 class Solution:
@@ -9,9 +11,11 @@ class Solution:
     
 if __name__ == "__main__":
     sol = Solution()
+    # Example 1
     cost1 = [10,15,20]
     mccs1 = sol.minCostClimbingStairs(cost1)
     print(mccs1)
+    # Example 2
     cost2 = [1,100,1,1,1,100,1,1,100,1]
     mccs2 = sol.minCostClimbingStairs(cost2)
     print(mccs2)

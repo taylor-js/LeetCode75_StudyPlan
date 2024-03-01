@@ -13,7 +13,13 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    s = "abc"
-    t = "ahbgdc"
-    result = sol.isSubsequence(s, t)
-    print(result)
+    # Example 1
+    s1 = "abc"
+    t1 = "ahbgdc"
+    is1 = sol.isSubsequence(s1, t1)
+    print(is1)
+    # Example 2
+    s2 = "axc"
+    t2 = "ahbgdc"
+    is2 = sol.isSubsequence(s2, t2)
+    print(is2)
