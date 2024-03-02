@@ -4,33 +4,28 @@ import heapq
 from typing import List
 
 class Solution:
-    def totalCost(self, costs: List[int], k: int, candidates: int) -> int:
-        cost_heap = []
-
-        # Initialize heap with costs of initial candidates
-        for i in range(candidates):
-            heapq.heappush(cost_heap, (costs[i], 0))
-        
-        # Initialize heap with costs of trailing candidates
-        for i in range(max(candidates, len(costs) - candidates), len(costs)):
-            heapq.heappush(cost_heap, (costs[i], 1))
-        
+    def totalCost(self, worker_costs: List[int], k: int, candidates: int) -> int:
+        left_index = 0
+        right_index = len(worker_costs) - 1
+        min_heap_left = []
+        min_heap_right = []
         total_cost = 0
-        left_candidate_index = candidates
-        right_candidate_index = len(costs) - candidates - 1
-
-        # Pop the minimum cost candidates and update the heap accordingly
-        for _ in range(k):
-            min_cost, direction = heapq.heappop(cost_heap)
-            total_cost += min_cost
-            if left_candidate_index <= right_candidate_index:
-                if direction == 0:
-                    heapq.heappush(cost_heap, (costs[left_candidate_index], 0))
-                    left_candidate_index += 1
-                else:
-                    heapq.heappush(cost_heap, (costs[right_candidate_index], 1))
-                    right_candidate_index -= 1
-        
+        while k > 0:
+            while len(min_heap_left) < candidates and left_index <= right_index:
+                heapq.heappush(min_heap_left, worker_costs[left_index])
+                left_index += 1
+            while len(min_heap_right) < candidates and left_index <= right_index:
+                heapq.heappush(min_heap_right, worker_costs[right_index])
+                right_index -= 1
+            cost_left = min_heap_left[0] if min_heap_left else float('inf')
+            cost_right = min_heap_right[0] if min_heap_right else float('inf')
+            if cost_left <= cost_right:
+                total_cost += cost_left
+                heapq.heappop(min_heap_left)
+            else:
+                total_cost += cost_right
+                heapq.heappop(min_heap_right)
+            k -= 1
         return total_cost
 
 
