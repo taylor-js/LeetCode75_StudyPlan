@@ -26,20 +26,27 @@ class Solution:
         # Return the original head of the linked list
         return head
     
+    def print_linkedlist(self, node):
+        values = []
+        while node:
+            values.append(node.val)
+            node = node.next
+        print(*values)
+    
 if __name__ == "__main__":
     sol = Solution()
     
     # Example 1
     head1 = ListNode(1, ListNode(3, ListNode(4, ListNode(7, ListNode(1, ListNode(2, ListNode(6)))))))
     dm1 = sol.deleteMiddle(head1)
-    print(head1.val, head1.next.val, head1.next.next.val, head1.next.next.next.val, head1.next.next.next.next.val, head1.next.next.next.next.next.val)
+    sol.print_linkedlist(dm1)
 
     # Example 2
     head2 = ListNode(1, ListNode(2, ListNode(3, ListNode(4))))
     dm2 = sol.deleteMiddle(head2)
-    print(head2.val, head2.next.val, head2.next.next.val)
+    sol.print_linkedlist(dm2)
 
     # Example 3
     head3 = ListNode(2, ListNode(1))
     dm3 = sol.deleteMiddle(head3)
-    print(head3.val)
+    sol.print_linkedlist(dm3)
