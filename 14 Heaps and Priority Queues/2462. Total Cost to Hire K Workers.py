@@ -5,18 +5,18 @@ from typing import List
 
 class Solution:
     def totalCost(self, worker_costs: List[int], k: int, candidates: int) -> int:
-        left_index = 0
-        right_index = len(worker_costs) - 1
+        i = 0
+        j = len(worker_costs) - 1
         min_heap_left = []
         min_heap_right = []
         total_cost = 0
         while k > 0:
-            while len(min_heap_left) < candidates and left_index <= right_index:
-                heapq.heappush(min_heap_left, worker_costs[left_index])
-                left_index += 1
-            while len(min_heap_right) < candidates and left_index <= right_index:
-                heapq.heappush(min_heap_right, worker_costs[right_index])
-                right_index -= 1
+            while len(min_heap_left) < candidates and i <= j:
+                heapq.heappush(min_heap_left, worker_costs[i])
+                i += 1
+            while len(min_heap_right) < candidates and i <= j:
+                heapq.heappush(min_heap_right, worker_costs[j])
+                j -= 1
             cost_left = min_heap_left[0] if min_heap_left else float('inf')
             cost_right = min_heap_right[0] if min_heap_right else float('inf')
             if cost_left <= cost_right:
