@@ -21,8 +21,14 @@ class Solution:
 
 if __name__ == "__main__":
     bst = Solution()
-    # Example 1
-    root1 = TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)), TreeNode(7))
+    # Example 1 root = [4,2,7,1,3], val = 2
+    root1 = TreeNode(4,
+        left=TreeNode(2, 
+            left=TreeNode(1),
+            right=TreeNode(3)
+        ),
+        right=TreeNode(7)
+    )
     val1 = 2
     result1 = bst.searchBST(root1, val1)
     if result1:
@@ -38,8 +44,16 @@ if __name__ == "__main__":
         print("Output for Example 1:", output1)
     else:
         print("Output for Example 1:", [])
-    # Example 2
-    root2 = TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)), TreeNode(7))
+    # Example 2 root = [4,2,7,1,3], val = 5
+    root2 = TreeNode(
+        4,
+        left=TreeNode(
+            2,
+            left=TreeNode(1),
+            right=TreeNode(3)
+        ),
+        right=TreeNode(7)
+    )
     val2 = 5
     result2 = bst.searchBST(root2, val2)
     if result2:
