@@ -11,10 +11,10 @@ class Solution:
         min_heap_right = []
         total_cost = 0
         while k > 0:
-            while len(min_heap_left) < candidates and i <= j:
+            while i <= j and len(min_heap_left) < candidates:
                 heapq.heappush(min_heap_left, worker_costs[i])
                 i += 1
-            while len(min_heap_right) < candidates and i <= j:
+            while i <= j and len(min_heap_right) < candidates:
                 heapq.heappush(min_heap_right, worker_costs[j])
                 j -= 1
             cost_left = min_heap_left[0] if min_heap_left else float('inf')
@@ -27,7 +27,6 @@ class Solution:
                 heapq.heappop(min_heap_right)
             k -= 1
         return total_cost
-
 
 if __name__ == "__main__":
     sol = Solution()
