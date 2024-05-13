@@ -18,16 +18,16 @@ class Solution:
         return "".join(stack)
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     s1 = "3[a]2[bc]"
-    ds1 = sol.decodeString(s1)
+    ds1 = s.decodeString(s1)
     print(ds1)
     # Example 2
     s2 = "3[a2[c]]"
-    ds2 = sol.decodeString(s2)
+    ds2 = s.decodeString(s2)
     print(ds2)
     # Example 3
     s3 = "2[abc]3[cd]ef"
-    ds3 = sol.decodeString(s3)
+    ds3 = s.decodeString(s3)
     print(ds3)

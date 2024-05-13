@@ -11,19 +11,19 @@ class Solution:
         return c1 == c2 or (n1 == n2 and set(word1) == set(word2))
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     word1 = "abc"
     word2 = "bca"
-    cs1 = sol.closeStrings(word1, word2)
+    cs1 = s.closeStrings(word1, word2)
     print(cs1)
     # Example 2
     word3 = "a"
     word4 = "aa"
-    cs2 = sol.closeStrings(word3, word4)
+    cs2 = s.closeStrings(word3, word4)
     print(cs2)
     # Example 3
     word5 = "cabbba"
     word6 = "abbccc"
-    cs3 = sol.closeStrings(word5, word6)
+    cs3 = s.closeStrings(word5, word6)
     print(cs3)

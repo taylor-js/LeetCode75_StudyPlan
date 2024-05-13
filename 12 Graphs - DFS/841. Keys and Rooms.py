@@ -14,12 +14,12 @@ class Solution:
         return len(visited) == len(rooms)
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     rooms1 = [[1],[2],[3],[]]
-    cvar1 = sol.canVisitAllRooms(rooms1)
+    cvar1 = s.canVisitAllRooms(rooms1)
     print(cvar1)
     # Example 2
     rooms2 = [[1,3],[3,0,1],[2],[0]]
-    cvar2 = sol.canVisitAllRooms(rooms2)
+    cvar2 = s.canVisitAllRooms(rooms2)
     print(cvar2)

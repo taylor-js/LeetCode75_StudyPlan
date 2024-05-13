@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/?envType=study-plan-v2&envId=leetcode-75
+
 from typing import Optional
 
 class ListNode:
@@ -34,19 +36,19 @@ class Solution:
         print(*values)
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     
     # Example 1
     head1 = ListNode(1, ListNode(3, ListNode(4, ListNode(7, ListNode(1, ListNode(2, ListNode(6)))))))
-    dm1 = sol.deleteMiddle(head1)
-    sol.print_linkedlist(dm1)
+    dm1 = s.deleteMiddle(head1)
+    s.print_linkedlist(dm1)
 
     # Example 2
     head2 = ListNode(1, ListNode(2, ListNode(3, ListNode(4))))
-    dm2 = sol.deleteMiddle(head2)
-    sol.print_linkedlist(dm2)
+    dm2 = s.deleteMiddle(head2)
+    s.print_linkedlist(dm2)
 
     # Example 3
     head3 = ListNode(2, ListNode(1))
-    dm3 = sol.deleteMiddle(head3)
-    sol.print_linkedlist(dm3)
+    dm3 = s.deleteMiddle(head3)
+    s.print_linkedlist(dm3)

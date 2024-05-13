@@ -9,7 +9,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
-class Solution:
+class sution:
     def maxLevelSum(self, root: Optional[TreeNode]) -> int:
         if not root:
             return 0
@@ -34,20 +34,20 @@ class Solution:
         return max_level
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = sution()
     # Example 1: root = [1,7,0,7,-8,null,null]
     root1 = TreeNode(1)
     root1.left = TreeNode(7)
     root1.right = TreeNode(0)
     root1.left.left = TreeNode(7)
     root1.left.right = TreeNode(-8)
-    result1 = sol.maxLevelSum(root1)
-    print("Example 1 Output:", result1)
+    result1 = s.maxLevelSum(root1)
+    print(result1)
     # Example 2: root = [989,null,10250,98693,-89388,null,null,null,-32127]
     root2 = TreeNode(989)
     root2.right = TreeNode(10250)
     root2.right.left = TreeNode(98693)
     root2.right.right = TreeNode(-89388)
     root2.right.right.right = TreeNode(-32127)
-    result2 = sol.maxLevelSum(root2)
-    print("Example 2 Output:", result2)
+    result2 = s.maxLevelSum(root2)
+    print(result2)

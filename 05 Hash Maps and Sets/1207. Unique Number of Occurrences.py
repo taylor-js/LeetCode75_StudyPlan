@@ -9,16 +9,16 @@ class Solution:
         return len(set(c.values())) == len(c)
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     arr1 = [1,2,2,1,1,3]
-    uo1 = sol.uniqueOccurrences(arr1)
+    uo1 = s.uniqueOccurrences(arr1)
     print(uo1)
     # Example 2
     arr2 = [1,2]
-    uo2 = sol.uniqueOccurrences(arr2)
+    uo2 = s.uniqueOccurrences(arr2)
     print(uo2)
     # Example 3
     arr3 = [-3,0,1,-3,1,1,1,-3,10,0]
-    uo3 = sol.uniqueOccurrences()
+    uo3 = s.uniqueOccurrences(arr3)
     print(uo3)

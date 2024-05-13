@@ -19,7 +19,7 @@ class Solution:
         return dfs(root, root.val)
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     root1 = TreeNode(3)
     root1.left = TreeNode(1)
@@ -28,7 +28,7 @@ if __name__ == "__main__":
     root1.left.right = None
     root1.right.left = TreeNode(1)
     root1.right.right = TreeNode(5)
-    gn1 = sol.goodNodes(root1)
+    gn1 = s.goodNodes(root1)
     print(gn1)
 
     # Example 2
@@ -38,5 +38,5 @@ if __name__ == "__main__":
     root2.right = TreeNode(4)
     root2.right.left = None
     root2.right.right = TreeNode(2)
-    gn2 = sol.goodNodes(root2)
+    gn2 = s.goodNodes(root2)
     print(gn2)

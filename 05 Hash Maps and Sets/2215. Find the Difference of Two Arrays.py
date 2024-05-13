@@ -15,14 +15,14 @@ class Solution:
         return [list(result1), list(result2)]
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     nums1 = [1,2,3]
     nums2 = [2,4,6]
-    fd1 = sol.findDifference(nums1, nums2)
+    fd1 = s.findDifference(nums1, nums2)
     print(fd1)
     # Example 2
     nums3 = [1,2,3,3]
     nums4 = [1,1,2,2]
-    fd2 = sol.findDifference(nums3, nums4)
+    fd2 = s.findDifference(nums3, nums4)
     print(fd2)

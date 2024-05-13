@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/smallest-number-in-infinite-set/
+# https://leetcode.com/problems/smallest-number-in-infinite-set/?envType=study-plan-v2&envId=leetcode-75
 
 import heapq
 

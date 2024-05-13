@@ -20,16 +20,16 @@ class Solution:
         return stack
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     asteroids1 = [5,10,-5]
-    ac1 = sol.asteroidCollision(asteroids1)
+    ac1 = s.asteroidCollision(asteroids1)
     print(ac1)
     # Example 2
     asteroids2 = [8,-8]
-    ac2 = sol.asteroidCollision(asteroids2)
+    ac2 = s.asteroidCollision(asteroids2)
     print(ac2)
     # Example 3
     asteroids3 = [10,2,-5]
-    ac3 = sol.asteroidCollision(asteroids3)
+    ac3 = s.asteroidCollision(asteroids3)
     print(ac3)

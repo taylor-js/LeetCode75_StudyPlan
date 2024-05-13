@@ -18,12 +18,12 @@ class Solution:
         return numOfProvinces
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     isConnected1 = [[1,1,0],[1,1,0],[0,0,1]]
-    fcm1 = sol.findCircleNum(isConnected1)
+    fcm1 = s.findCircleNum(isConnected1)
     print(fcm1)
     # Example 2
     isConnected2 = [[1,0,0],[0,1,0],[0,0,1]]
-    fcm2 = sol.findCircleNum(isConnected2)
+    fcm2 = s.findCircleNum(isConnected2)
     print(fcm2)

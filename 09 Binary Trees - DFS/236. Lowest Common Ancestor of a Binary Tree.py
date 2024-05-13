@@ -20,7 +20,7 @@ class Solution:
             return left or right
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
 
     # Example 1
     root1 = TreeNode(3)
@@ -36,7 +36,7 @@ if __name__ == "__main__":
     root1.left.right.right = TreeNode(4)
     p1 = TreeNode(5)
     q1 = TreeNode(1)
-    lca1 = sol.lowestCommonAncestor(root1, p1, q1)
+    lca1 = s.lowestCommonAncestor(root1, p1, q1)
     print(lca1.val)  # Expected output: 3
 
     # Example 2
@@ -53,7 +53,7 @@ if __name__ == "__main__":
     root2.left.right.right = TreeNode(4)
     p2 = TreeNode(5)
     q2 = TreeNode(4)
-    lca2 = sol.lowestCommonAncestor(root2, p2, q2)
+    lca2 = s.lowestCommonAncestor(root2, p2, q2)
     print(lca2.val)  # Expected output: 5
 
     # Example 3
@@ -61,5 +61,5 @@ if __name__ == "__main__":
     root3.left = TreeNode(2)
     p3 = TreeNode(1)
     q3 = TreeNode(2)
-    lca3 = sol.lowestCommonAncestor(root3, p3, q3)
+    lca3 = s.lowestCommonAncestor(root3, p3, q3)
     print(lca3.val)  # Expected output: 1

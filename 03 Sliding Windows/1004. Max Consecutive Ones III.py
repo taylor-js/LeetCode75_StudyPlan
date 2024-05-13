@@ -17,13 +17,13 @@ class Solution:
     
 if __name__ == "__main__":
     # Example 1
-    sol = Solution()
+    s = Solution()
     nums1 = [1,1,1,0,0,0,1,1,1,1,0]
     k1 = 2
-    lo1 = sol.longestOnes(nums1, k1)
+    lo1 = s.longestOnes(nums1, k1)
     print(lo1)
 
     nums2 = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1]
     k2 = 3
-    lo2 = sol.longestOnes(nums2, k2)
+    lo2 = s.longestOnes(nums2, k2)
     print(lo2)

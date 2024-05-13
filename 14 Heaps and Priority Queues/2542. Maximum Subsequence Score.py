@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/maximum-subsequence-score/?envType=study-plan-v2&envId=leetcode-75
+
 import heapq
 from typing import List
 
@@ -40,16 +42,16 @@ class Solution:
         return max_score
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     nums1_1 = [1,3,3,2]
     nums1_2 = [2,1,3,4]
     k1_1 = 3
-    ms1 = sol.maxScore(nums1_1, nums1_2, k1_1)
+    ms1 = s.maxScore(nums1_1, nums1_2, k1_1)
     print(ms1)
     # Example 2
     nums2_1 = [4,2,3,1,1]
     nums2_2 = [7,5,10,9,6]
     k2_1 = 1
-    ms2 = sol.maxScore(nums2_1, nums2_2, k2_1)
+    ms2 = s.maxScore(nums2_1, nums2_2, k2_1)
     print(ms2)

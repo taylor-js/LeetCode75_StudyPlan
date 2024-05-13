@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/leaf-similar-trees/?envType=study-plan-v2&envId=leetcode-75
+
 from typing import Optional
 
 class TreeNode:
@@ -22,7 +24,7 @@ class Solution:
         return leaf1 == leaf2
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
 
     # Example 1
     root1 = TreeNode(3)
@@ -45,7 +47,7 @@ if __name__ == "__main__":
     root2.right.right.left = TreeNode(9)
     root2.right.right.right = TreeNode(8)
 
-    ls1 = sol.leafSimilar(root1, root2)
+    ls1 = s.leafSimilar(root1, root2)
     print(ls1)
 
     # Example 2
@@ -57,5 +59,5 @@ if __name__ == "__main__":
     root4.left = TreeNode(3)
     root4.right = TreeNode(2)
 
-    ls2 = sol.leafSimilar(root3, root4)
+    ls2 = s.leafSimilar(root3, root4)
     print(ls2)

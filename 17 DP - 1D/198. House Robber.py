@@ -12,12 +12,10 @@ class Solution:
         return rob2
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
-    nums1 = [1,2,3,1]
-    r1 = sol.rob(nums1)
+    r1 = s.rob([1,2,3,1])
     print(r1)
     # Example 2
-    nums2 = [2,7,9,3,1]
-    r2 = sol.rob(nums2)
+    r2 = s.rob([2,7,9,3,1])
     print(r2)

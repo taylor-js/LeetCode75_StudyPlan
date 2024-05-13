@@ -17,14 +17,14 @@ class Solution:
         return result
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     candies1 = [2,3,5,1,3]
     extraCandies1 = 3
-    kwc1 = sol.kidsWithCandies(candies1, extraCandies1)
+    kwc1 = s.kidsWithCandies(candies1, extraCandies1)
     print(kwc1)
     # Example 2
     candies2 = [4,2,1,1,2]
     extraCandies2 = 1
-    kwc2 = sol.kidsWithCandies(candies2, extraCandies2)
+    kwc2 = s.kidsWithCandies(candies2, extraCandies2)
     print(kwc2)

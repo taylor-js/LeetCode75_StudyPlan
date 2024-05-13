@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/description/?envType=study-plan-v2&envId=leetcode-75
+# https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/?envType=study-plan-v2&envId=leetcode-75
 
 from typing import List
 from collections import deque
@@ -32,23 +32,23 @@ class Solution:
         return -1
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     maze1 = [["+","+",".","+"],
              [".",".",".","+"],
              ["+","+","+","."]]
     entrance1 = [1,2]
-    ne1 = sol.nearestExit(maze1,entrance1)
+    ne1 = s.nearestExit(maze1,entrance1)
     print(ne1)
     # Example 2
     maze2 = [["+","+","+"],
              [".",".","."],
              ["+","+","+"]]
     entrance2 = [1,0]
-    ne2 = sol.nearestExit(maze2, entrance2)
+    ne2 = s.nearestExit(maze2, entrance2)
     print(ne2)
     # Example 3
     maze3 = [[".","+"]]
     entrance3 = [0,0]
-    ne3 = sol.nearestExit(maze3, entrance3)
+    ne3 = s.nearestExit(maze3, entrance3)
     print(ne3)

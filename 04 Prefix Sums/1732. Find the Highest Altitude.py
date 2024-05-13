@@ -12,12 +12,12 @@ class Solution:
         return result
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     gain1 = [-5,1,5,0,-7]
-    la1 = sol.largestAltitude(gain1)
+    la1 = s.largestAltitude(gain1)
     print(la1)
     # Example 2
     gain2 = [-4,-3,-2,-1,4,3,2]
-    la2 = sol.largestAltitude(gain2)
+    la2 = s.largestAltitude(gain2)
     print(la2)

@@ -10,12 +10,10 @@ class Solution:
         return min(cost[0], cost[1])
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
-    cost1 = [10,15,20]
-    mccs1 = sol.minCostClimbingStairs(cost1)
+    mccs1 = s.minCostClimbingStairs([10,15,20])
     print(mccs1)
     # Example 2
-    cost2 = [1,100,1,1,1,100,1,1,100,1]
-    mccs2 = sol.minCostClimbingStairs(cost2)
+    mccs2 = s.minCostClimbingStairs([1,100,1,1,1,100,1,1,100,1])
     print(mccs2)

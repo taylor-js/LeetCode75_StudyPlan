@@ -48,19 +48,19 @@ class Solution:
         return changes
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     n1 = 6
     connections1 = [[0,1],[1,3],[2,3],[4,0],[4,5]]
-    mr1 = sol.minReorder(n1, connections1)
+    mr1 = s.minReorder(n1, connections1)
     print(mr1)
     # Example 2
     n2 = 5
     connections2 = [[1,0],[1,2],[3,2],[3,4]]
-    mr2 = sol.minReorder(n2, connections2)
+    mr2 = s.minReorder(n2, connections2)
     print(mr2)
     # Example 3
     n3 = 3
     connections3 = [[1,0],[2,0]]
-    mr3 = sol.minReorder(n3, connections3)
+    mr3 = s.minReorder(n3, connections3)
     print(mr3)

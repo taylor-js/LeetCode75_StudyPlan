@@ -19,12 +19,12 @@ class Solution:
         return result
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     height1 = [1,8,6,2,5,4,8,3,7]
-    ma1 = sol.maxArea(height1)
+    ma1 = s.maxArea(height1)
     print(ma1)
     # Example 2
     height2 = [1,1]
-    ma2 = sol.maxArea(height2)
+    ma2 = s.maxArea(height2)
     print(ma2)

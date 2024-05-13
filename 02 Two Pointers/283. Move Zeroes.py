@@ -16,12 +16,12 @@ class Solution:
         return nums
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     nums1 = [0,1,0,3,12]
-    mz1 = sol.moveZeroes(nums1)
+    mz1 = s.moveZeroes(nums1)
     print(mz1)
     # Example 2
     nums2 = [0]
-    mz2 = sol.moveZeroes(nums2)
+    mz2 = s.moveZeroes(nums2)
     print(mz2)

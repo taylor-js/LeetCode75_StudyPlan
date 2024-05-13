@@ -20,16 +20,16 @@ class Solution:
         return False
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     nums1 = [1,2,3,4,5]
-    it1 = sol.increasingTriplet(nums1)
+    it1 = s.increasingTriplet(nums1)
     print(it1)
     # Example 2
     nums2 = [5,4,3,2,1]
-    it2 = sol.increasingTriplet(nums2)
+    it2 = s.increasingTriplet(nums2)
     print(it2)
     # Example 3
     nums3 = [2,1,5,0,4,6]
-    it3 = sol.increasingTriplet(nums3)
+    it3 = s.increasingTriplet(nums3)
     print(it3)

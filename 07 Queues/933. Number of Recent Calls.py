@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/number-of-recent-calls/?envType=study-plan-v2&envId=leetcode-75
+
 from collections import deque
 
 class RecentCounter:

@@ -14,16 +14,16 @@ class Solution:
         return -1
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     nums1 = [1,7,3,6,5,6]
-    pi1 = sol.pivotIndex(nums1)
+    pi1 = s.pivotIndex(nums1)
     print(pi1)
     # Example 2
     nums2 = [1,2,3]
-    pi2 = sol.pivotIndex(nums2)
+    pi2 = s.pivotIndex(nums2)
     print(pi2)
     # Example 3
     nums3 = [2,1,-1]
-    pi3 = sol.pivotIndex(nums3)
+    pi3 = s.pivotIndex(nums3)
     print(pi3)

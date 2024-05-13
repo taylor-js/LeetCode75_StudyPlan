@@ -30,14 +30,14 @@ class Solution:
         return result
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     products1 = ["mobile","mouse","moneypot","monitor","mousepad"]
     searchWord1 = "mouse"
-    sp1 = sol.suggestedProducts(products1, searchWord1)
+    sp1 = s.suggestedProducts(products1, searchWord1)
     print(sp1)
     # Example 2
     products2 = ["havana"]
     searchWord2 = "havana"
-    sp2 = sol.suggestedProducts(products2, searchWord2)
+    sp2 = s.suggestedProducts(products2, searchWord2)
     print(sp2)

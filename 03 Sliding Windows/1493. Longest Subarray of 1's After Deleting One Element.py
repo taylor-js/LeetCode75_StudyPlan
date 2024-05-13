@@ -16,16 +16,16 @@ class Solution:
         return max_length
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     nums1 = [1,1,0,1]
-    ls1 = sol.longestSubarray(nums1)
+    ls1 = s.longestSubarray(nums1)
     print(ls1)
     # Example 2
     nums2 = [0,1,1,1,0,1,1,0,1]
-    ls2 = sol.longestSubarray(nums2)
+    ls2 = s.longestSubarray(nums2)
     print(ls2)
     # Example 3
     nums3 = [1,1,1]
-    ls3 = sol.longestSubarray(nums3)
+    ls3 = s.longestSubarray(nums3)
     print(ls3)

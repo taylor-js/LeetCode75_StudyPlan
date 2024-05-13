@@ -38,19 +38,19 @@ class Solution:
         return result
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     s1 = "abciiidef"
     k1 = 3
-    mv1 = sol.maxVowels(s1, k1)
+    mv1 = s.maxVowels(s1, k1)
     print(mv1)
     # Example 2
     s2 = "aeiou"
     k2 = 2
-    mv2 = sol.maxVowels(s2, k2)
+    mv2 = s.maxVowels(s2, k2)
     print(mv2)
     # Example 3
     s3 = "leetcode"
     k3 = 3
-    mv3 = sol.maxVowels(s3, k3)
+    mv3 = s.maxVowels(s3, k3)
     print(mv3)

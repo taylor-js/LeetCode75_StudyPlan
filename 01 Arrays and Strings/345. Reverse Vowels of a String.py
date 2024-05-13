@@ -21,12 +21,12 @@ class Solution:
         return ''.join(s)
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     s1 = "hello"
-    rv1 = sol.reverseVowels(s1)
+    rv1 = s.reverseVowels(s1)
     print(rv1)
     # Example 2
     s2 = "leetcode"
-    rv2 = sol.reverseVowels(s2)
+    rv2 = s.reverseVowels(s2)
     print(rv2)

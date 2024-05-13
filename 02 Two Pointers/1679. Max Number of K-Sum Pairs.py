@@ -16,14 +16,14 @@ class Solution:
         return pairs
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     nums1 = [1,2,3,4]
     k1 = 5
-    mo1 = sol.maxOperations(nums1, k1)
+    mo1 = s.maxOperations(nums1, k1)
     print(mo1)
     # Example 2
     nums2 = [3,1,3,4,3]
     k2 = 6
-    mo2 = sol.maxOperations(nums2, k2)
+    mo2 = s.maxOperations(nums2, k2)
     print(mo2)

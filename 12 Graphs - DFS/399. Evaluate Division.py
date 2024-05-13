@@ -49,22 +49,22 @@ class Solution:
         return results
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     equations1 = [["a","b"],["b","c"]]
     values1 = [2.0,3.0]
     queries1 = [["a","c"],["b","a"],["a","e"],["a","a"],["x","x"]]
-    ce1 = sol.calcEquation(equations1,values1,queries1)
+    ce1 = s.calcEquation(equations1,values1,queries1)
     print(ce1)
     # Example 2
     equations2 = [["a","b"],["b","c"],["bc","cd"]]
     values2 = [1.5,2.5,5.0]
     queries2 = [["a","c"],["c","b"],["bc","cd"],["cd","bc"]]
-    ce2 = sol.calcEquation(equations2,values2,queries2)
+    ce2 = s.calcEquation(equations2,values2,queries2)
     print(ce2)
     # Example 3
     equations3 = [["a","b"]]
     values3 = [0.5]
     queries3 = [["a","b"],["b","a"],["a","c"],["x","y"]]
-    ce3 = sol.calcEquation(equations3,values3,queries3)
+    ce3 = s.calcEquation(equations3,values3,queries3)
     print(ce3)

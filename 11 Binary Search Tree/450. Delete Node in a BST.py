@@ -43,7 +43,7 @@ class Solution:
             self.print_inorder(root.right)
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
 
     # Example 1
     root1 = TreeNode(
@@ -60,9 +60,10 @@ if __name__ == "__main__":
         )
     )
     key1 = 3
-    sol.deleteNode(root1, key1)
-    sol.print_inorder(root1)
+    s.deleteNode(root1, key1)
+    s.print_inorder(root1)
     print("\n")
+
     # Example 2
     root2 = TreeNode(
         5,
@@ -78,12 +79,13 @@ if __name__ == "__main__":
         )
     )
     key2 = 0
-    sol.deleteNode(root2, key2)
-    sol.print_inorder(root2)
+    s.deleteNode(root2, key2)
+    s.print_inorder(root2)
     print("\n")
+
     # Example 3
     root3 = None
     key3 = 0
-    sol.deleteNode(root3, key3)
-    sol.print_inorder(root3)
+    s.deleteNode(root3, key3)
+    s.print_inorder(root3)
     print("\n")

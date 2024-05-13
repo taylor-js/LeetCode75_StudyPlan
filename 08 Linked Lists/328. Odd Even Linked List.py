@@ -45,13 +45,13 @@ class Solution:
         print(*values)
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     head1 = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
-    oel1 = sol.oddEvenList(head1)
-    sol.print_linkedlist(oel1)
+    oel1 = s.oddEvenList(head1)
+    s.print_linkedlist(oel1)
     # Example 2
     head2 = ListNode(2, ListNode(1, ListNode(3, ListNode(5, ListNode(6, ListNode(4, ListNode(7)))))))
-    oel2 = sol.oddEvenList(head2)
-    sol.print_linkedlist(oel2)
+    oel2 = s.oddEvenList(head2)
+    s.print_linkedlist(oel2)
     

@@ -25,16 +25,16 @@ class Solution:
         return result
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     head1 = ListNode(5, ListNode(4, ListNode(2, ListNode(1))))
-    ps1 = sol.pairSum(head1)
+    ps1 = s.pairSum(head1)
     print(ps1)
     # Example 2
     head2 = ListNode(4,ListNode(2,ListNode(2,ListNode(3))))
-    ps2 = sol.pairSum(head2)
+    ps2 = s.pairSum(head2)
     print(ps2)
     # Example 3
     head3 = ListNode(1, ListNode(100000))
-    ps3 = sol.pairSum(head3)
+    ps3 = s.pairSum(head3)
     print(ps3)

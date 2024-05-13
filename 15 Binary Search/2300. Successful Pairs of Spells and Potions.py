@@ -20,16 +20,16 @@ class Solution:
         return result
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     spells1 = [5,1,3]
     potions1 = [1,2,3,4,5]
     success1 = 7
-    sp1 = sol.successfulPairs(spells1,potions1,success1)
+    sp1 = s.successfulPairs(spells1,potions1,success1)
     print(sp1)
     # Example 2
     spells2 = [3,1,2]
     potions2 = [8,5,8]
     success2 = 16
-    sp2 = sol.successfulPairs(spells2,potions2,success2)
+    sp2 = s.successfulPairs(spells2,potions2,success2)
     print(sp2)

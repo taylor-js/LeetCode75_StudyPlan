@@ -12,14 +12,14 @@ class Solution:
         return i == len(s)
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     s1 = "abc"
     t1 = "ahbgdc"
-    is1 = sol.isSubsequence(s1, t1)
+    is1 = s.isSubsequence(s1, t1)
     print(is1)
     # Example 2
     s2 = "axc"
     t2 = "ahbgdc"
-    is2 = sol.isSubsequence(s2, t2)
+    is2 = s.isSubsequence(s2, t2)
     print(is2)

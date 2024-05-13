@@ -25,17 +25,17 @@ class Solution:
         print(*values)
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     head1 = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
-    rl1 = sol.reverseList(head1)
-    sol.print_linkedlist(rl1)
+    rl1 = s.reverseList(head1)
+    s.print_linkedlist(rl1)
     # Example 2
     head2 = ListNode(1, ListNode(2))
-    rl2 = sol.reverseList(head2)
-    sol.print_linkedlist(rl2)
+    rl2 = s.reverseList(head2)
+    s.print_linkedlist(rl2)
     # Example 3
     head3 = ListNode(None)
-    rl3 = sol.reverseList(head3)
-    sol.print_linkedlist(rl3)
+    rl3 = s.reverseList(head3)
+    s.print_linkedlist(rl3)
     

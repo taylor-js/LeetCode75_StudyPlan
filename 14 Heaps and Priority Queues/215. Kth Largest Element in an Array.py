@@ -21,14 +21,14 @@ class Solution:
         return heap[0]
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     nums1 = [3,2,1,5,6,4]
     k1 = 2
-    fkl1 = sol.findKthLargest(nums1,k1)
+    fkl1 = s.findKthLargest(nums1,k1)
     print(fkl1)
     # Example 2
     nums2 = [3,2,3,1,2,4,5,5,6]
     k2 = 4
-    fkl2 = sol.findKthLargest(nums2, k2)
+    fkl2 = s.findKthLargest(nums2, k2)
     print(fkl2)

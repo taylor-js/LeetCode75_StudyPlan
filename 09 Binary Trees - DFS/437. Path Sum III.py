@@ -30,7 +30,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     root1 = TreeNode(10)
     root1.left = TreeNode(5)
@@ -42,7 +42,7 @@ if __name__ == "__main__":
     root1.left.left.right = TreeNode(-2)
     root1.left.right.right = TreeNode(1)
     targetSum1 = 8
-    ps1 = sol.pathSum(root1, targetSum1)
+    ps1 = s.pathSum(root1, targetSum1)
     print(ps1)
     # Example 2
     root2 = TreeNode(5)
@@ -56,5 +56,5 @@ if __name__ == "__main__":
     root2.right.right.left = TreeNode(5)
     root2.right.right.right = TreeNode(1)
     targetSum2 = 22
-    ps2 = sol.pathSum(root2, targetSum2)
+    ps2 = s.pathSum(root2, targetSum2)
     print(ps2)

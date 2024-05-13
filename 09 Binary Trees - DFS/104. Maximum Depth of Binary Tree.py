@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/maximum-depth-of-binary-tree/?envType=study-plan-v2&envId=leetcode-75
+
 from typing import Optional
 from collections import deque
 
@@ -45,22 +47,22 @@ class Solution:
         return result
 
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1
     root1 = TreeNode(3)
     root1.left = TreeNode(9)
     root1.right = TreeNode(20)
     root1.right.left = TreeNode(15)
     root1.right.right = TreeNode(7)
-    md11 = sol.maxDepth1(root1)
-    md12 = sol.maxDepth2(root1)
-    md13 = sol.maxDepth3(root1)
+    md11 = s.maxDepth1(root1)
+    md12 = s.maxDepth2(root1)
+    md13 = s.maxDepth3(root1)
     print(md11, md12, md13)
     # Example 2
     root2 = TreeNode(1)
     root2.left = None
     root2.right = TreeNode(2)
-    md21 = sol.maxDepth1(root2)
-    md22 = sol.maxDepth2(root2)
-    md23 = sol.maxDepth3(root2)
+    md21 = s.maxDepth1(root2)
+    md22 = s.maxDepth2(root2)
+    md23 = s.maxDepth3(root2)
     print(md21, md22, md23)

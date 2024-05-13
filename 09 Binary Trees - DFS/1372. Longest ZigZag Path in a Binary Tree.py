@@ -21,7 +21,7 @@ class Solution:
         return self.maximum
     
 if __name__ == "__main__":
-    sol = Solution()
+    s = Solution()
     # Example 1: root = [1,null,1,1,1,null,null,1,1,null,1,null,null,null,1]
     root1 = TreeNode(1)
     root1.left = TreeNode(None)
@@ -38,8 +38,8 @@ if __name__ == "__main__":
     root1.right.left.right = TreeNode(None)
     root1.right.right.left = TreeNode(None)
     root1.right.right.right = TreeNode(1)
-    e1tn = sol.longestZigZag(root1)
-    print("Solution with TreeNode()", e1tn)
+    e1tn = s.longestZigZag(root1)
+    print(e1tn)
     # Example 2: root = [1,1,1,null,1,null,null,1,1,null,1]
     root2 = TreeNode(1)
     root2.left = TreeNode(1)
@@ -54,9 +54,9 @@ if __name__ == "__main__":
     root2.left.right.left.right = TreeNode(None)
     root2.right.right.left = TreeNode(None)
     root2.right.right.right = TreeNode(1)
-    e2 = sol.longestZigZag(root2)
-    print("Solution with TreeNode()", e2)
+    e2 = s.longestZigZag(root2)
+    print(e2)
     # Example 3: root = [1]
     root3 = TreeNode(1)
-    e3 = sol.longestZigZag(root3)
-    print("Solution 3 with TreeNode()", e3)
+    e3 = s.longestZigZag(root3)
+    print(e3)
